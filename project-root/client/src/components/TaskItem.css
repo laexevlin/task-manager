@@ -1,0 +1,61 @@
+.task-item {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.task-item__title {
+  font-size: 24px;
+}
+
+.task-item__description {
+  color: var(--color-text);
+}
+
+.task-item__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.task-item__btns {
+  display: flex;
+  gap: 5px;
+}
+
+.task-item__btn {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-item__status {
+  padding: 4px;
+  border-radius: var(--border-radius);
+}
+
+.task-item__status--todo {
+  background-color: rgb(95, 6, 6);
+  color: rgb(235, 13, 13);
+}
+
+.task-item__status--in_progress {
+  background-color: rgb(142, 131, 4);
+  color: rgb(255, 255, 0);
+}
+
+.task-item__status--done {
+  background-color: rgb(6, 143, 6);
+  color: rgb(0, 255, 17);
+}

@@ -1,0 +1,38 @@
+:root {
+  --color-bg: rgb(50, 50, 50);
+  --color-border: #8d8c8c;
+  --color-text: rgb(175, 179, 184);
+  --border-radius: 10px;
+}
+
+[data-theme="light"] {
+  --color-bg: rgb(175, 179, 184);
+  --color-border: rgb(50, 50, 50);
+  --color-text: rgb(50, 50, 50);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

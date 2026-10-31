@@ -1,0 +1,37 @@
+.error-container {
+  background-color: var(--color-bg);
+  border: 2px solid rgb(236, 118, 118);
+  border-radius: var(--border-radius);
+  padding: 20px 40px 20px 15px;
+  max-width: 350px;
+  position: fixed;
+  z-index: 100;
+  top: 35px;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.error-container__icon {
+  color: rgb(236, 118, 118);
+}
+
+.error-container__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .error-container {
+    top: 12px;
+    right: 12px;
+    padding: 12px 36px 12px 12px;
+  }
+}

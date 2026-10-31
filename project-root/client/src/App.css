@@ -1,0 +1,50 @@
+.app {
+  margin: 0 auto;
+  width: 70%;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header__container-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header__logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+.header__theme-btn {
+  background-color: var(--color-bg);
+  border: 0;
+  color: var(--color-text);
+  font-size: 20px;
+}
+
+.header__btn:hover:not(:disabled) {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
+.header__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

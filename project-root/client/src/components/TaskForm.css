@@ -1,0 +1,70 @@
+.task-form,
+.task-form__input,
+.task-form__btn {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.task-form__input,
+.task-form__btn {
+  color: var(--color-text);
+  font: inherit;
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+.task-form {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.task-form__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.task-form__input {
+  flex: 1 1 200px;
+  min-width: 0;
+  box-shadow: none;
+}
+
+.task-form__input:focus {
+  outline: none;
+  border-color: var(--color-text);
+}
+
+.task-form__input::placeholder {
+  color: var(--color-text);
+  opacity: 0.5;
+}
+
+.task-form__input:-webkit-autofill,
+.task-form__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-text);
+  -webkit-box-shadow: 0 0 0 1000px var(--color-bg) inset;
+  caret-color: var(--color-text);
+}
+
+.task-form__btn {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.task-form__btn:hover:not(:disabled) {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.task-form__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.task-form__error-message {
+  margin: 12px 0 0 0;
+  color: #ff6b6b;
+}
